@@ -1,6 +1,6 @@
 # Social Media Application
 
-A simple social media application with users, posts, likes and comments - developed using React, Node, Express and MongoDB. 
+A social media application for college students which allows them to connect with classmates, posts, likes and comments - developed using React, Node, Express and MongoDB.
 
 ![MERN Social](https://s3.amazonaws.com/mernbook/git+/social.png "MERN Social")
 
