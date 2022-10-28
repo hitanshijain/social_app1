@@ -11,6 +11,19 @@
 Personalized
 Non-Personalized
 
+Things We will be implementing in our recommendation engine are:-
+
+**Recommendation Engine Input Features:-**
+   * profile information
+   * courses
+   * Major
+   * Colleges(looking specifically for Boston based Colleges)
+   * professional interests
+   * More....( We have limited ourselves to these for now.)
+
+**Recommendation output is User recommended**
+
+
 ## User stories
 - As an app user, I want to have basic functionalities like login, create profile, post, follow, chat, search and get notifications.
 
@@ -56,48 +69,28 @@ MongoDB Atlas is convenient to use.
 React combined with industry-tested, server-side technologies, such as Node, Express, and MongoDB, enables you to develop and deploy robust real-world full-stack web apps. 
 
 
-## Time Line of Project
 
-> Third Week Sprint:  Implementing the Following things for Recommendation:
-  
-  ###**Recommendation engine**
- 
- > Recommendation Engine Input:-
-   * profile information
-   * courses
-   * major
-   * school(looking specifically for boston based schools)
-   * professional interests
-   * Might be more features but we have limited ourselves to these for now.
+##  Next Steps:
 
-> Recommendation output is User recommended
-
-### Things to Perform for Building the Recommendation Engine:
-
-> Things to do Create a Dummy dataset for repliciating the Inputs/Features of RC:
-    * Feature 1: course 
-    * Feature 2:degree  
-    * Feature 3: colleges? 3
-        * What time u graduated if you are an Alumni? (time line/year)
-        * If u’re currently studying then just yes or no
-    * Feature 4: professional interests (common)  select upto three 5 ex sde, ml engineer etc.
+1. Creating a User form while user registeration to gather user info and store it in our database(mongodb atlas)
+2. Creating a Dummy dataset for replicating the Inputs/Features of RC:
+      * R.C Feature 1: Course 
+      * R.C Feature 2: Degree  
+      * R.C Feature 3: Colleges? 
+         -  What time u graduate if you are an Alumni? (timeline/year)
+         -  If you're currently studying, then just yes or no
+      * R.C Feature 4: Professional interests (common)- select up to three or five ex sde, ml engineer etc.
    
-> Current Database features helpful in recommendations:-
-    * followers of a user(unique users)* 
-        * (email based authorization for checkign unique users)
-    * followings of a user(a array of unique eleements)
+3. Implementing Content-based filtering and utilizing the stored user features in the database to recommend users by displaying mutual connections, Linkedin-based simple filtering via inbuilt javascript methods, etc.
 
-  
-  
-  
-Note: Problems we might face in future but currently overlooked due to less time:-
--  recommendiong basis of degree not rn
-- state currently not city(major) focusing in boston rn
-- fake accounts problems not to be sorted right now
+> Note:- Our Current Database also houses some features which will be helpful in recommendation:-
+
+      * followers of a user(unique users)
+      * (email-based authorization for checking unique users)
+      * followings of a user(an array of unique elements)
 
 
-*
-### Future Steps:-
-
-* Collecting actual high quality data from students responses through type forms
-
+### Problems we might face in the future but currently overlooked due to less time:-
+- we're not recommending basis on the degree; thus, it means the degree of users doesn't have enough weight in the decision, which might make some recommendations for higher degree individuals not helpful. 
+- recommending the basis of state currently, not the city(central) focusing in Boston right now might decrease the generalizability of the recommendations engine.
+- fake account problems will be sorted currently by emails. Still, if users start spamming with new emails, we can't do anything right now....we will have to build a monitoring system or a reward base system for users putting productive content.
