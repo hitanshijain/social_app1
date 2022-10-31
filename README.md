@@ -50,7 +50,6 @@ MongoDB Atlas is convenient to use.
 
 ![MERN Social](https://s3.amazonaws.com/mernbook/git+/social.png "MERN Social")
 
-### [Live Demo](http://social2.mernbook.com/ "MERN Social")
 
 #### What you need to run this code
 1. Node (13.12.0)
