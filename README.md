@@ -119,7 +119,7 @@ The Features are:
 ### Recommendation System2:
 ![WhatsApp Image 2022-10-31 at 12 29 04 PM (1)](https://user-images.githubusercontent.com/44031169/199059605-5ea47a28-1c84-4839-96df-0b1329eec2b3.jpeg)
 
-his system will only work after the first System has kicked in and started generating at least enough data for a user such that a User's follower and the following list has been filled with at least m, n >10(a number for now). 
+This system will only work after the first System has kicked in and started generating at least enough data for a user such that a User's follower and the following list has been filled with at least m, n >10(a number for now). 
 Every user will have its profiling is done which is nothing but a matrix containing the subscripts of users the users are following and are followers. the matrix will be n*m .
 
 
