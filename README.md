@@ -90,8 +90,29 @@ React combined with industry-tested, server-side technologies, such as Node, Exp
       * followings of a user(an array of unique elements)
 
 
-## Week Plan to Implement Recommendation Engine:-
 
+
+## Current Status of Rceommendation Systems:-
+
+The User form which helps to create a user profile by letting users input their data has been added in the UI of the social application aand now the users can add their interests and . The user Form Image is being shown below for reference:
+
+
+
+![WhatsApp Image 2022-10-31 at 1 02 25 PM](https://user-images.githubusercontent.com/44031169/199066034-3cf71858-0375-48a9-b9ee-6fdea8f0afcf.jpeg)
+
+
+
+
+A Dummy Dataset required to construct the recommendation system has been created.
+
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/44031169/199065500-a2331f7e-95db-4256-a066-15766d1247d9.png">
+
+
+Inaddition, the dummy dataset features have been pushed to our online mmongo db atlas database and now the app currently houses 1000 users.
+![WhatsApp Image 2022-10-31 at 12 54 44 PM (1)](https://user-images.githubusercontent.com/44031169/199065798-8def5812-3892-48df-8bc7-c47d9c72545e.jpeg)
+
+
+## Next Week Plan to Implement atleast one Recommendation Engine:-
 
 
 In the Recommendation Feed Page we'll be implementing two recommendation engines:-
