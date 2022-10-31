@@ -69,7 +69,7 @@ React combined with industry-tested, server-side technologies, such as Node, Exp
 
 
 
-##  Next Steps:
+##  Next Steps Due as of Next Week:
 
 1. Creating a User form while user registeration to gather user info and store it in our database(mongodb atlas)
 2. Creating a Dummy dataset for replicating the Inputs/Features of RC:
@@ -87,14 +87,14 @@ React combined with industry-tested, server-side technologies, such as Node, Exp
       * followers of a user(unique users)
       * (email-based authorization for checking unique users)
       * followings of a user(an array of unique elements)
+      
+> Note:- In the Next steps The, 1. and 2. have been fulfilled, and 3. logic for the recommendation engine has been brainstormed, which you can see when reading below and now we're proceeding to implement at least one recommendation system
 
 
 
+## Current Status of Recommendation Systems as of 10/30/22:-
 
-## Current Status of Rceommendation Systems:-
-
-The User form which helps to create a user profile by letting users input their data has been added in the UI of the social application aand now the users can add their interests and . The user Form Image is being shown below for reference:
-
+The User form which helps to create a user profile by letting users input their data has been added in the UI of the social application. The user Form Image added in the UI is being shown below for reference:
 
 
 ![WhatsApp Image 2022-10-31 at 1 02 25 PM](https://user-images.githubusercontent.com/44031169/199066034-3cf71858-0375-48a9-b9ee-6fdea8f0afcf.jpeg)
@@ -102,12 +102,12 @@ The User form which helps to create a user profile by letting users input their 
 
 
 
-A Dummy Dataset required to construct the recommendation system has been created.
+A Dummy Dataset required to construct the recommendation system has been created. The Dummy data screenshot is being shown below for reference:
 
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/44031169/199065500-a2331f7e-95db-4256-a066-15766d1247d9.png">
 
+In addition, the dummy dataset features have been pushed to our online mongo DB atlas database, and now the app currently houses 1000 users. The Application UI's screenshot showcasing the current users after the platform has grown to a considerable amount of users as users register and fill the user form is shown below for reference:
 
-Inaddition, the dummy dataset features have been pushed to our online mmongo db atlas database and now the app currently houses 1000 users.
 ![WhatsApp Image 2022-10-31 at 12 54 44 PM (1)](https://user-images.githubusercontent.com/44031169/199065798-8def5812-3892-48df-8bc7-c47d9c72545e.jpeg)
 
 
