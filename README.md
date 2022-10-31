@@ -90,6 +90,44 @@ React combined with industry-tested, server-side technologies, such as Node, Exp
       * followings of a user(an array of unique elements)
 
 
+## Week Plan to Implement Recommendation Engine:-
+
+
+
+In the Recommendation Feed Page we'll be implementing two recommendation engines:-
+### Recommendation System1:
+![WhatsApp Image 2022-10-31 at 12 29 04 PM](https://user-images.githubusercontent.com/44031169/199059583-40644605-087c-405b-8e98-06e5c11f06b4.jpeg)
+
+These are the steps the recommendation sys one will follow, which contains two filters:-
+
+1.) In the first Filter, We'll recommend users based on the filter criteria written below in decreasing priority with their respective weights. These three features will help sort the recommendations and return users as recommendations.
+The Features are:
+	1. Professional Interests (a)
+	2. College(b)
+	3. Major (c)
+
+> Note: We will also weight these features such that no one feature dominates over others, and also the critical features are given priority by increasing weigths such as the weights of each being a, b, c, and the sum of these weights, i.e., a+b+c = 1 and these weights should be non-negative.
+> Moreover, the current values of the weights have been preset as: a=.60, b=.30, and c=.10. 
+
+2.) This is the second filter, and this will be a user-defined selection such that it contains two mini filters:
+### Mini filter1: If the user wants only current graduate students to be recommended, then select this filter and return five recommendations to the user.
+### Mini filter2: If the user wants to be recommended only alumni (people who have passed out and will be working in the industry, most likely), then it will return the user five recommendations.
+
+*Final Output*: Also, In this is a Recommendation Feed, we will return the user with five recommendations with the title: "Maybe these people meet your Interest, and you might want to follow them?
+ 
+
+### Recommendation System2:
+![WhatsApp Image 2022-10-31 at 12 29 04 PM (1)](https://user-images.githubusercontent.com/44031169/199059605-5ea47a28-1c84-4839-96df-0b1329eec2b3.jpeg)
+
+his system will only work after the first System has kicked in and started generating at least enough data for a user such that a User's follower and the following list has been filled with at least m, n >10(a number for now). 
+Every user will have its profiling is done which is nothing but a matrix containing the subscripts of users the users are following and are followers. the matrix will be n*m .
+
+
+
+
+
+
+
 ### Problems we might face in the future but currently overlooked due to less time:-
 - we're not recommending basis on the degree; thus, it means the degree of users doesn't have enough weight in the decision, which might make some recommendations for higher degree individuals not helpful. 
 - recommending the basis of state currently, not the city(central) focusing in Boston right now might decrease the generalizability of the recommendations engine.
