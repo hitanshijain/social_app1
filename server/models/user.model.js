@@ -27,26 +27,46 @@ const UserSchema = new mongoose.Schema({
     type: String,
     trim: true
   },
+  college: {
+    type: String,
+    trim: true,
+  },
+  major: {
+    type: String,
+    trim: true,
+  },
+  graduateYear: {
+    type: String,
+    trim: true,
+  },
+  interest: {
+    type: String,
+    trim: true,
+  },
+  degree: {
+    type: String,
+    trim: true,
+  },
   photo: {
     data: Buffer,
     contentType: String
   },
-  following: [{type: mongoose.Schema.ObjectId, ref: 'User'}],
-  followers: [{type: mongoose.Schema.ObjectId, ref: 'User'}]
+  following: [{ type: mongoose.Schema.ObjectId, ref: 'User' }],
+  followers: [{ type: mongoose.Schema.ObjectId, ref: 'User' }]
 })
 
 UserSchema
   .virtual('password')
-  .set(function(password) {
+  .set(function (password) {
     this._password = password
     this.salt = this.makeSalt()
     this.hashed_password = this.encryptPassword(password)
   })
-  .get(function() {
+  .get(function () {
     return this._password
   })
 
-UserSchema.path('hashed_password').validate(function(v) {
+UserSchema.path('hashed_password').validate(function (v) {
   if (this._password && this._password.length < 6) {
     this.invalidate('password', 'Password must be at least 6 characters.')
   }
@@ -56,10 +76,10 @@ UserSchema.path('hashed_password').validate(function(v) {
 }, null)
 
 UserSchema.methods = {
-  authenticate: function(plainText) {
+  authenticate: function (plainText) {
     return this.encryptPassword(plainText) === this.hashed_password
   },
-  encryptPassword: function(password) {
+  encryptPassword: function (password) {
     if (!password) return ''
     try {
       return crypto
@@ -70,7 +90,7 @@ UserSchema.methods = {
       return ''
     }
   },
-  makeSalt: function() {
+  makeSalt: function () {
     return Math.round((new Date().valueOf() * Math.random())) + ''
   }
 }
