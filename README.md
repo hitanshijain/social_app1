@@ -110,6 +110,7 @@ In addition, the dummy dataset features have been pushed to our online mongo DB 
 
 ![WhatsApp Image 2022-10-31 at 12 54 44 PM (1)](https://user-images.githubusercontent.com/44031169/199065798-8def5812-3892-48df-8bc7-c47d9c72545e.jpeg)
 
+> Note:-*The current branch called "basic_recommendation" houses the latest code as of 10/31/22*
 
 ## Next Week Plan to Implement atleast one Recommendation Engine:-
 
@@ -152,3 +153,4 @@ Every user will have its profiling is done which is nothing but a matrix contain
 - we're not recommending basis on the degree; thus, it means the degree of users doesn't have enough weight in the decision, which might make some recommendations for higher degree individuals not helpful. 
 - recommending the basis of state currently, not the city(central) focusing in Boston right now might decrease the generalizability of the recommendations engine.
 - fake account problems will be sorted currently by emails. Still, if users start spamming with new emails, we can't do anything right now....we will have to build a monitoring system or a reward base system for users putting productive content.
+
